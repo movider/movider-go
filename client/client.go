@@ -2,7 +2,7 @@
 // Use of this source code is governed by a MIT style
 // license that can be found in the LICENSE file.
 
-// Movider REST API client for Go. API support for SMS, Verify, Acknowledge Verify and Cancel Verify.
+// Movider API client for Go. API support for SMS, Verify, Acknowledge Verify and Cancel Verify.
 package client
 
 import (
