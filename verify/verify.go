@@ -83,6 +83,9 @@ type Params struct {
 	// Note: Time periods between 120 - 600 seconds
 	PinExpire int
 
+	// Sender name
+	From string
+
 	// The tag are grouping message for report feature.
 	Tag string
 }
@@ -185,6 +188,7 @@ func makeSendRequestData(c *client.Client, to string, params *Params) (url.Value
 	d.Set("pin_expire", strconv.Itoa(params.PinExpire))
 	d.Set("tag", params.Tag)
 	d.Set("to", to)
+	d.Set("from", params.From)
 
 	return d, nil
 }
